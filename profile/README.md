@@ -13,3 +13,5 @@ If you need a more advanced solution, you can choose the [ORM](https://github.co
 ```
 composer require initorm/orm
 ```
+
+![initorm-icon](https://github.com/InitORM/.github/assets/104234499/b9be28df-b0d0-4e83-9ab3-eab4ede0a7a2)
