@@ -1,0 +1,42 @@
+title: "[Q&A] "
+labels: ["question"]
+body:
+  - type: dropdown
+    id: package
+    attributes:
+      label: Relevant package
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Not specific to one package"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to achieve? What have you tried so far?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Code or context
+      description: Relevant code snippet, configuration, or error output.
+      render: php
+
+  - type: input
+    id: php_version
+    attributes:
+      label: PHP version
+      placeholder: "8.2.10"
+
+  - type: input
+    id: package_version
+    attributes:
+      label: Package version
+      placeholder: "1.2.3"

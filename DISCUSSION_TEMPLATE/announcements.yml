@@ -1,0 +1,35 @@
+title: "[Announcement] "
+labels: ["announcement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is intended for maintainer announcements (releases, deprecations, roadmap updates).
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Announcement type
+      options:
+        - Release
+        - Deprecation
+        - Roadmap
+        - Community / project news
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One-paragraph summary of the announcement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Full content of the announcement. Include links to releases, PRs, or migration guides where relevant.
+    validations:
+      required: true

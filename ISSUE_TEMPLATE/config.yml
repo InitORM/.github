@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or idea / Soru veya öneri
+    url: https://github.com/orgs/InitORM/discussions
+    about: Use Discussions for questions, ideas, and "how do I…?" topics. Soru, öneri ve "nasıl yapılır?" konuları için Discussions kullanın.
+  - name: Security vulnerability / Güvenlik açığı
+    url: https://github.com/InitORM/.github/blob/main/SECURITY.md
+    about: Do not open a public issue for security vulnerabilities. Güvenlik açıkları için public issue açmayın.

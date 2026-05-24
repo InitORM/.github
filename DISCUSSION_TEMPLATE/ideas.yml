@@ -1,0 +1,35 @@
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share an idea or a rough proposal here. For concrete feature requests with a clear scope, please open a **Feature request** issue in the relevant package instead.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Target package
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Cross-package / new package"
+        - "Tooling / docs / community"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like to see? What problem does it solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or prior art
+      description: Other libraries or approaches that inspired this idea (optional).

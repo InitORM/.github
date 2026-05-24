@@ -1,0 +1,6 @@
+{
+  "name": "Validate composer.json (InitORM)",
+  "description": "Run `composer validate --strict` on every change to composer.json or composer.lock.",
+  "categories": ["PHP", "InitORM"],
+  "filePatterns": ["composer.json"]
+}

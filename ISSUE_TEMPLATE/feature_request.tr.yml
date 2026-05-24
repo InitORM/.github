@@ -1,0 +1,63 @@
+name: "Özellik isteği"
+description: "Bir InitORM paketi için yeni özellik veya iyileştirme önerin."
+title: "[Özellik] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        İyileştirme önerdiğiniz için teşekkürler. Lütfen yalnızca çözümü değil, çözmek istediğiniz *problemi* de açıklayın.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Hedef paket
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Paketler arası / yeni paket"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Çözmek istediğiniz problem nedir? Kimi etkiliyor?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Önerilen çözüm
+      description: InitORM'un nasıl davranmasını istersiniz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Değerlendirilen alternatifler
+      description: Denediğiniz geçici çözümler veya değerlendirdiğiniz diğer yaklaşımlar.
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Geriye dönük uyumsuz bir değişiklik mi?
+      options:
+        - "Hayır — geriye uyumlu"
+        - "Olabilir — tartışılması gerek"
+        - "Evet — major sürüm artışı gerektirir"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Onay
+      options:
+        - label: Bu isteği açmadan önce mevcut issue ve discussion'larda arama yaptım.
+          required: true

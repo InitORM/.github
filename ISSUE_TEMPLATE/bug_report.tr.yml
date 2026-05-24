@@ -1,0 +1,86 @@
+name: "Hata bildirimi"
+description: "Bir InitORM paketinde tekrarlanabilir bir hata bildirin."
+title: "[Hata] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hata bildirimi için ayırdığınız zaman için teşekkürler. Lütfen mümkün olduğunca ayrıntı doldurun — eksik raporlar üzerinde işlem yapmak zordur.
+        For the English form, select the **Bug report** template.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Etkilenen paket
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Birden fazla / emin değilim"
+    validations:
+      required: true
+
+  - type: input
+    id: package_version
+    attributes:
+      label: Paket sürümü
+      description: "`composer show initorm/<paket>` çıktısındaki Versions satırı."
+      placeholder: "1.2.3"
+    validations:
+      required: true
+
+  - type: input
+    id: php_version
+    attributes:
+      label: PHP sürümü
+      description: "`php -v` çıktısı."
+      placeholder: "8.2.10"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: driver
+    attributes:
+      label: Veritabanı sürücüsü
+      options:
+        - MySQL / MariaDB
+        - PostgreSQL
+        - SQLite
+        - Diğer / Geçerli değil
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Ne oldu?
+      description: Hatanın net bir açıklaması; beklediğiniz davranış ile gerçekleşen davranış.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reprodüksiyon
+      description: Sorunu yeniden üreten en küçük kod örneği (ve gerekiyorsa şema).
+      render: php
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Hata çıktısı / stack trace
+      render: shell
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Onay
+      options:
+        - label: Bu raporu açmadan önce mevcut issue ve discussion'larda arama yaptım.
+          required: true
+        - label: Etkilenen paketin en güncel minor sürümünü kullanıyorum.
+          required: true

@@ -1,0 +1,63 @@
+name: "Feature request"
+description: "Suggest a new feature or improvement for an InitORM package."
+title: "[Feature] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing an improvement. Please describe the *problem* you want to solve, not only the solution.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Target package
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Cross-package / new package"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem are you trying to solve? Who is affected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like InitORM to behave?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you tried, or other approaches you weighed.
+
+  - type: dropdown
+    id: breaking
+    attributes:
+      label: Is this a breaking change?
+      options:
+        - "No — backwards compatible"
+        - "Possibly — needs discussion"
+        - "Yes — requires a major version bump"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and discussions before opening this request.
+          required: true

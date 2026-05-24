@@ -1,0 +1,86 @@
+name: "Bug report"
+description: "Report a reproducible bug in an InitORM package."
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. Please fill in as much detail as you can — incomplete reports are difficult to act on.
+        Türkçe form için **Hata bildirimi** şablonunu seçebilirsiniz.
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected package
+      options:
+        - "initorm/query-builder"
+        - "initorm/dbal"
+        - "initorm/database"
+        - "initorm/orm"
+        - "Multiple / unsure"
+    validations:
+      required: true
+
+  - type: input
+    id: package_version
+    attributes:
+      label: Package version
+      description: "Output of `composer show initorm/<package>` (Versions line)."
+      placeholder: "1.2.3"
+    validations:
+      required: true
+
+  - type: input
+    id: php_version
+    attributes:
+      label: PHP version
+      description: "Output of `php -v`."
+      placeholder: "8.2.10"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: driver
+    attributes:
+      label: Database driver
+      options:
+        - MySQL / MariaDB
+        - PostgreSQL
+        - SQLite
+        - Other / Not applicable
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, what you expected, and what actually occurred.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Smallest code sample (and schema if relevant) that reproduces the issue.
+      render: php
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output / stack trace
+      render: shell
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and discussions before opening this report.
+          required: true
+        - label: I am on the latest minor version of the affected package.
+          required: true
