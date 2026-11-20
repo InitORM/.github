@@ -20,7 +20,7 @@ Please **do not** open a public issue or discussion for security vulnerabilities
 Use one of the following channels:
 
 1. **GitHub Private Vulnerability Reporting** (preferred): open a report from the **Security** tab of the affected package repository — for example <https://github.com/InitORM/ORM/security/advisories/new>.
-2. **Email**: <info@muhammetsafak.com.tr> with the subject line `[InitORM Security] <package>`.
+2. **Email**: <info@muhammetsafak.com> with the subject line `[InitORM Security] <package>`.
 
 Please include:
 
