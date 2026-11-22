@@ -21,4 +21,4 @@ InitORM, tek bir kişi tarafından boş zamanlarında geliştirilmektedir. Doğr
 
 ## Ticari destek
 
-Şu an için ücretli destek paketi bulunmamaktadır. Ticari talepleriniz için doğrudan <info@muhammetsafak.com.tr> adresine yazabilirsiniz.
+Şu an için ücretli destek paketi bulunmamaktadır. Ticari talepleriniz için doğrudan <info@muhammetsafak.com> adresine yazabilirsiniz.

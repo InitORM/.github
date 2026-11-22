@@ -21,4 +21,4 @@ InitORM is maintained by a single person in their spare time. Using the right ch
 
 ## Commercial support
 
-There is no paid support tier today. For commercial enquiries, contact <info@muhammetsafak.com.tr> directly.
+There is no paid support tier today. For commercial enquiries, contact <info@muhammetsafak.com> directly.

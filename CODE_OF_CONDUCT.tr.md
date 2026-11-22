@@ -21,7 +21,7 @@ Covenant'ın kapsadığı konuların özeti:
 
 Bu Davranış Kuralları'nı ihlal eden bir durum yaşadıysanız veya tanık olduysanız, lütfen gizlilik içinde bakımcıya bildirin:
 
-- **E-posta**: <info@muhammetsafak.com.tr>
+- **E-posta**: <info@muhammetsafak.com>
 - **Konu satırı**: `[InitORM Conduct] <kısa özet>`
 
 Tüm bildirimler hızlı ve gizli bir şekilde incelenir. Bildirimde bulunanın kimliği korunur.

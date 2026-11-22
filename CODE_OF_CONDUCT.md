@@ -21,7 +21,7 @@ A summary of what the Covenant covers:
 
 If you experience or witness behavior that violates this Code of Conduct, please report it to the maintainer in confidence:
 
-- **Email**: <info@muhammetsafak.com.tr>
+- **Email**: <info@muhammetsafak.com>
 - **Subject line**: `[InitORM Conduct] <short summary>`
 
 All reports are reviewed promptly and confidentially. The reporter's identity is protected.

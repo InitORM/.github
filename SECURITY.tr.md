@@ -20,7 +20,7 @@ Güvenlik açıkları için **public** issue veya discussion **açmayın**.
 Aşağıdaki kanallardan birini kullanın:
 
 1. **GitHub Private Vulnerability Reporting** (tercih edilir): Etkilenen paket reposunun **Security** sekmesinden rapor açın — örneğin <https://github.com/InitORM/ORM/security/advisories/new>.
-2. **E-posta**: <info@muhammetsafak.com.tr> adresine `[InitORM Security] <paket>` konu satırıyla.
+2. **E-posta**: <info@muhammetsafak.com> adresine `[InitORM Security] <paket>` konu satırıyla.
 
 Lütfen şu bilgileri ekleyin:
 
